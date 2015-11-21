@@ -1,0 +1,38 @@
+.Table{
+    
+    width : 100%;
+    max-width : 1200px;
+    
+    
+}
+
+
+body div p{
+    
+    text-align: right;
+    
+}
+
+.img-responsive{
+    height: 200px;
+	width: 150px;
+    
+}
+
+.col-sm-2{
+    
+    display: inline-block;
+    column-span: all;
+}
+
+.col-sm-4{
+    
+    display: inline-block;
+    
+}
+
+.row-md-3{
+    
+ display: inline-block;
+    
+}
