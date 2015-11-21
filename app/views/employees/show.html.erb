@@ -1,18 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Firstname:</strong>
+  <strong>First Name:</strong>
   <%= @employee.firstname %>
 </p>
 
 <p>
-  <strong>Lastname:</strong>
+  <strong>Last Name:</strong>
   <%= @employee.lastname %>
 </p>
 
 <p>
   <strong>Picture:</strong>
   <%= image_tag(@employee.picture_url, :width => 300) if @employee.picture.present? %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @employee.email %>
 </p>
 
 <p>

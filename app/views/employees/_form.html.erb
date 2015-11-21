@@ -12,27 +12,39 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :firstname %><br>
+    <%= f.label "First Name" %><br>
     <%= f.text_field :firstname %>
   </div>
   <div class="field">
-    <%= f.label :lastname %><br>
+    <%= f.label "Last Name" %><br>
     <%= f.text_field :lastname %>
   </div>
   <div class="field">
-    <%= f.label :age %><br>
+    <%= f.label "Email" %><br>
+    <%= f.text_field :email %>
+    </div>
+  <div class="field">
+    <%= f.label "Age (optional)" %><br>
     <%= f.number_field :age %>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
+    <%= f.label "Geographic Area" %><br>
     <%= f.text_area :address %>
   </div>
   <div class="field">
-    <%= f.label :yearsexperience %><br>
+    <%= f.label "Years of Experience" %><br>
     <%= f.number_field :yearsexperience %>
   </div>
   <div class="field">
-    <%= f.label :relocate %><br>
+  <%= f.label "Skills" %><br />
+
+  <%= f.collection_check_boxes :skills, Skill.all, :id, :name %>
+    
+      
+   
+</div>
+  <div class="field">
+    <%= f.label "Willing to Relocate?" %><br>
     <%= f.check_box :relocate %>
   </div>
   <div class="field">
