@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :employers
   resources :skills
   resources :employees
   get 'home/index'

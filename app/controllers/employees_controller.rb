@@ -5,6 +5,12 @@ class EmployeesController < ApplicationController
   # GET /employees.json
   def index
     @employees = Employee.all
+    @search = Employee.search(params[:q])
+    @employee_results = @search.result(distinct: true)
+  end
+  
+  def set_search
+    @employee_results=Employee.search(params[:q])
   end
 
   # GET /employees/1
@@ -69,7 +75,7 @@ class EmployeesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def employee_params
-      params.require(:employee).permit(:firstname, :lastname, :age, :address, :yearsexperience, :relocate, :picture, skill_ids:[])
+      params.require(:employee).permit(:firstname, :lastname, :age, :address, :yearsexperience, :relocate, :picture, :email, skill_ids:[])
     end
     
 

@@ -38,8 +38,12 @@
   <div class="field">
   <%= f.label "Skills" %><br />
 
-  <%= f.collection_check_boxes :skills, Skill.all, :id, :name %>
-    
+  <%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name do |b| %>
+    <div class="collection-check-box">
+    <%= b.check_box %>
+    <%= b.label %>
+  </div>
+  <% end %>
       
    
 </div>

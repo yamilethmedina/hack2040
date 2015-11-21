@@ -1,39 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Employees</h1>
+<%= link_to 'New Employee Profile', new_employee_path %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-      <th>Address</th>
-      <th>Yearsexperience</th>
-      <th>Relocate</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<fieldset class="search-field">
+  <legend>Search Our Database</legend>
 
-  <tbody>
-    <% @employees.each do |employee| %>
-      <tr>
-        <td><%= employee.firstname %></td>
-        <td><%= employee.lastname %></td>
-        <td><%= employee.age %></td>
-        <td><%= employee.address %></td>
-        <td><%= employee.yearsexperience %></td>
-        <td><%= employee.relocate %></td>
-        <td><%= employee.picture %></td>
-        <td><%= link_to 'Show', employee %></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= search_form_for @search do |f| %>
+  
+<%= f.label "Skills" %><br />
+<%= f.collection_check_boxes :skills_id_in_any, Skill.all, :id, :name %>
+  
+  </div>
 
-<br>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+</fieldset>
 
-<%= link_to 'New Employee', new_employee_path %>
+<p><%= @employee_results.each do |b| %>
+<%= b.firstname %> <%= b.lastname %><br>
+<%= b.skills %></p>
+<% end %>
