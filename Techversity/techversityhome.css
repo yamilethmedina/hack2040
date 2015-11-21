@@ -1,0 +1,17 @@
+ .Table
+    {
+        display: table;
+    }
+    .Row
+    {
+        display: table-row;
+    }
+    .Cell
+    {
+        display: table-cell;
+        border: solid;
+        border-color: black;
+        border-width: thin;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
