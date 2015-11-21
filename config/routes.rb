@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
   devise_for :users
   devise_for :views
   
@@ -57,6 +59,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   
-  #root to: "home#index"
-  root to: "application#home"
+  # match '/some_route', to: 'application#home', as: :some_route
+  root "home#index"
+  #root to: "application#home"
 end
