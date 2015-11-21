@@ -1,23 +1,12 @@
- .Table
-    {
-        display: table;
-    }
-    .Row
-    {
-        display: table-row;
-    }
-    .Cell
-    {
-        display: table-cell;
-        border: solid;
-        border-color: black;
-        border-width: thin;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
 
 table, tr, td {
     border: none;
-    border width: 10px;
-    border height: 20px;
+    
+}
+
+#table img{
+    
+    width: 100px;
+    height: 200px;
+    
 }
