@@ -29,8 +29,7 @@
   
 <div class="field">
   
-<%= form.collection_radio_buttons :accounttype, [[true, 'employee'] ,[false, 'employer']],:first, :last %> 
-   
+
    
     
 </div>
@@ -42,6 +41,9 @@
     <%= form.submit "Update" %>
   </div>
 <% end %>
+
+<%= link_to 'New Employee Profile', new_employee_path %><br>
+<%= link_to 'Edit Employee Profile', edit_employee_path %>
 
 <h3>Cancel my account</h3>
 

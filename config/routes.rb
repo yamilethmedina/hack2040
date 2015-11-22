@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :employers
   resources :skills
   resources :employees
+  resources :home
   get 'home/index'
 
   # devise_for :users, controllers: { sessions: 'users/sessions' }
@@ -9,10 +10,13 @@ Rails.application.routes.draw do
        Rails.application.routes.draw do
          get 'home/index'
       devise_for :users, controllers: {
-        sessions: 'users/sessions'
-        }
+        sessions: 'users/sessions' }
+      
+         
     end
     
+    
+   
   devise_for :views
   
   # The priority is based upon order of creation: first created -> highest priority.
@@ -72,7 +76,10 @@ Rails.application.routes.draw do
   
   # match '/some_route', to: 'application#home', as: :some_route
   root "home#index"
+  # redirect_to root_path
   #root to: "application#home"
+  
+  
 
   
 
