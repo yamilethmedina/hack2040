@@ -21,7 +21,7 @@
 <strong><%= b.firstname %> <%= b.lastname %></strong><br>
 
 <i>Years of Experience:</i> <%= b.yearsexperience %><br>
-<i>Skills:</i> <%= b.skills %> <br>
+<i>Skills:</i> skills.join(",") <br>
 <i>Geographic Area:</i> <%= b.address %> <br>
 <i>Willing to Relocate?</i> <%= b.relocate %><br></p>
 <% end %>
