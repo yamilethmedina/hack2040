@@ -10,16 +10,20 @@
         </header>
         <section>
             <div class="employeeLogin" id="employeeLoginForm">
-                <input name="email" placeholder="Email" type="text"/>
-                <input name="password" placeholder="Password" type="password"/>
+                <form action="login.php" method="post">
+                    <input name="email" placeholder="Email" type="text"/>
+                    <input name="password" placeholder="Password" type="password"/>
+                </form>
             </div>
             <div class="companyLogin" id="companyLoginForm">
-                <input name="email" placeholder="Email" type="text"/>
-                <input name="password" placeholder="Password" type="password"/>
+                <form>
+                    <input name="email" placeholder="Email" type="text"/>
+                    <input name="password" placeholder="Password" type="password"/>
+                </form>
             </div>
         </section>
         <footer>
-            <?php include ("footer.html") ?>
+            
         </footer>
     </body>
 </html>
