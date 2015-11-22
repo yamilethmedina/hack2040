@@ -1,17 +1,13 @@
-body{
+html, body{
     
-  margin: 0;
+  margin: .5px;
   padding: 0;
 }
 
-.Table{
+
+.container{
     
-    max-width: 1115px;
-    margin: 0;
-  padding: 0;
-    
-    
-}
+    width: 100%;
 }
 
 
@@ -21,12 +17,6 @@ body div p{
     
 }
 
-img{
-    
-    height:auto;
-    width: 100%;
-    
-}
 
 .col-sm-2{
     
