@@ -1,7 +1,10 @@
-.Table{
+body{
     
-    width : 100%;
-    max-width : 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.Table{
     
     
 }
@@ -13,26 +16,36 @@ body div p{
     
 }
 
-.img-responsive{
-    height: 200px;
-	width: 150px;
+img{
+    
+    height:250;
+    width: 205;
     
 }
 
 .col-sm-2{
     
+    height:250px;
+    width: 205px;
     display: inline-block;
-    column-span: all;
+    background-color:black;
+    
+   
+ 
 }
 
 .col-sm-4{
     
+    width: 410px;
+    
     display: inline-block;
+    
     
 }
 
 .row-md-3{
-    
+      
  display: inline-block;
+ 
     
 }
