@@ -3,9 +3,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
 # before_filter :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
-  # def new
-  #   @accounttypes = ModelName.select(:accounttype).distinct
-  # end
+  def new
+    @accounttypes = User.select(:accounttype).distinct
+ end
 
   # POST /resource
   # def create
@@ -13,9 +13,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # GET /resource/edit
-  # def edit
-  #   super
-  # end
+   def edit
+    @accounttypes = User.select(:accounttype).distinct
+  end
 
   # PUT /resource
   # def update

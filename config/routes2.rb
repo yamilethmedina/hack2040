@@ -73,6 +73,7 @@ Rails.application.routes.draw do
   root "home#index"
   #root to: "application#home"
 
+
   
   get "employees/:id/edit", to: "employers#index", as: :employers
 
