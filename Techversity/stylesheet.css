@@ -1,13 +1,13 @@
-body{
+html, body{
     
-  margin: 0;
+  margin: .5px;
   padding: 0;
 }
 
-.Table img{
-    display: inline-block;
+
+.container{
     
-}
+    width: 100%;
 }
 
 
@@ -17,12 +17,6 @@ body div p{
     
 }
 
-img{
-    
-    height:100;
-    width: 100%;
-    
-}
 
 .col-sm-2{
     
@@ -64,7 +58,6 @@ nav{
     position: absolute;
     background-color: teal;
     vertical-align: center;
-    padding-right: 10px;
     
 }
 
