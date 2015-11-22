@@ -19,14 +19,14 @@
 <% end %>
 </fieldset>
 
-<strong>All Candidates</strong>
+<strong>All Candidates</strong><br>
 <p><% @employee_results.each do |b| %>
 <strong><%= b.firstname %> <%= b.lastname %></strong><br>
 
 <i>Years of Experience:</i> <%= b.yearsexperience %><br>
 <i>Skills:</i> 
     <% b.skills.each do |skill| %>
-     <%= skill.name %> 
+     <%= skill.name %>, 
   <% end %><br>
 
 <i>Geographic Area:</i> <%= b.address %> <br>
