@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'New Employee Profile', new_employee_path %>
+
+<fieldset class="search-field">
+  <legend>Search Our Database</legend>
+
+<%= search_form_for @search do |f| %>
+  
+<%= f.label "Skills" %><br />
+<%= f.collection_check_boxes :skills_id_in_any, Skill.all, :id, :name %>
+  
+  </div>
+
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+</fieldset>
+
+<p><%= @employee_results.each do |b| %>
+<%= b.firstname %> <%= b.lastname %><br>
+<%= b.skills %></p>
+<% end %>

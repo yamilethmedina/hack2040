@@ -1,0 +1,61 @@
+<%= form_for(@employee) do |f| %>
+  <% if @employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+      <% @employee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "First Name" %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label "Last Name" %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label "Email" %><br>
+    <%= f.text_field :email %>
+    </div>
+  <div class="field">
+    <%= f.label "Age (optional)" %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label "Geographic Area" %><br>
+    <%= f.text_area :address %>
+  </div>
+  <div class="field">
+    <%= f.label "Years of Experience" %><br>
+    <%= f.number_field :yearsexperience %>
+  </div>
+  <div class="field">
+  <%= f.label "Skills" %><br />
+
+  <%= f.collection_check_boxes :skill_ids, Skill.all, :id, :name do |b| %>
+    <div class="collection-check-box">
+    <%= b.check_box %>
+    <%= b.label %>
+  </div>
+  <% end %>
+      
+   
+</div>
+  <div class="field">
+    <%= f.label "Willing to Relocate?" %><br>
+    <%= f.check_box :relocate %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

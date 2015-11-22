@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @employee.firstname %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @employee.lastname %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@employee.picture_url, :width => 300) if @employee.picture.present? %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @employee.email %>
+</p>
+
+<p>
+  <strong>Age (optional):</strong>
+  <%= @employee.age %>
+</p>
+
+<p>
+  <strong>Geographic Area:</strong>
+  <%= @employee.address %>
+</p>
+
+<p>
+  <strong>Years of Experience:</strong>
+  <%= @employee.yearsexperience %>
+</p>
+
+<p>
+  <strong>Willing To Relocate?</strong>
+  <%= @employee.relocate %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
