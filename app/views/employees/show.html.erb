@@ -10,10 +10,6 @@
   <%= @employee.lastname %>
 </p>
 
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@employee.picture_url, :width => 300) if @employee.picture.present? %>
-</p>
 
 <p>
   <strong>Email address:</strong>
@@ -47,6 +43,12 @@
   <strong>Willing To Relocate?</strong>
   <%= @employee.relocate %>
 </p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@employee.picture_url, :width => 100) if @employee.picture.present? %>
+</p>
+
 
 
 

@@ -1,14 +1,13 @@
 html, body{
-    
-  margin: .5px;
+
+  margin: 0;
   padding: 0;
 }
 
 .container{
-    
-    background-color: black;
-    width: 100%;
-    
+  background-color: black;
+  width: 100% !important;
+  padding: 0;
 }
 
 img{
@@ -18,21 +17,28 @@ img{
 
 
 text div p{
-    
-    text-align: left;
-    
+  text-align: left;
 }
 
 
+
+#login{
+
+    background-color: black;
+    overflow: hidden;
+
+
+}
+
 #title{
-    
+
     font-family: fantasy;
     font-size: 72px;
     color: white;
     text-align: center;
     display: block;
     width: 100%;
-    
+
 }
 
 #subtitle{
@@ -42,83 +48,83 @@ text div p{
     text-align: center;
     display: block;
     width: 100%;
-    
-    
+
+
 }
 
  #signup{
-    
+
     display: block;
     margin: 0 auto !important;
     float:none;
     width: 50%;
-    margin-top: 75px !important; 
-    
-    
-    
+    margin-top: 75px !important;
+
+
+
 }
 
 .btn{
-    
+
     float: right;
     margin-bottom: 5px;
     padding-left: -100px;
     padding-right: -100px;
-    
+
 }
 
 
 div{
-    
+
     padding: 0 !important;
     margin: 0 !important;
-    
+
 }
 
 
 nav ul a{
-    
+
     font-size: 15px;
 }
 
 nav{
-    
+
     height: 30px;
     line-height: 30px;
     background-color: teal;
     vertical-align: center;
-    
+
 }
 
 nav nav-wrapper {
-    
-    text-decoration: none;   
-    
+
+    text-decoration: none;
+
 }
 
 nav-wrapper li a{
-    
+
     color:white;
-    
+
 }
 
 .text{
-    
+
     background-color: black;
     color: white;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    
+
 }
 
 #first p{
-    
+
     font-size: 42px;
 }
 
 #first{
-    
+
     text-align: center;
     font-size: 22px;
     vertical-align: middle;
@@ -126,26 +132,19 @@ nav-wrapper li a{
 }
 
 #second{
-    
-    text-align: justify; 
-    vertical-align: middle;
-    
-    
-    
-    
-}
 
-#third{
-    
     text-align: justify;
     vertical-align: middle;
 
-    
+
+
+
 }
 
-.col s12 m8{
-    
-   
+#third{
 
-    
+    text-align: justify;
+    vertical-align: middle;
+
+
 }
