@@ -36,6 +36,14 @@
 </p>
 
 <p>
+   <strong>Skills:</strong>
+   
+   <%= @employee.skills.each do |skill| %>
+    <%= puts skill.name %>
+  <% end %>
+  </p>
+
+<p>
   <strong>Willing To Relocate?</strong>
   <%= @employee.relocate %>
 </p>

@@ -6,6 +6,7 @@ class EmployeesController < ApplicationController
   def index
     @employees = Employee.all
     @search = Employee.search(params[:q])
+    # @employee_skill_list = Employee.search(params[:q])
     @employee_results = @search.result(distinct: true)
   end
   
@@ -16,6 +17,7 @@ class EmployeesController < ApplicationController
   # GET /employees/1
   # GET /employees/1.json
   def show
+    # @skill_results = @search.result(distinct: true)
   end
 
   # GET /employees/new
