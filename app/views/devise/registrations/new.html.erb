@@ -24,8 +24,7 @@
   
   <div class="field">
     
-  <%= form.collection_radio_buttons :accounttype, [[true, 'employee'] ,[false, 'employer']],:first, :last %> 
-    
+  <%= form.input :accounttype as => :boolean [[true, 'employee'], [false, 'employer']],:first, :last %>
    
    
     

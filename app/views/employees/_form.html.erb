@@ -35,6 +35,11 @@
     <%= f.label "Years of Experience" %><br>
     <%= f.number_field :yearsexperience %>
   </div>
+    <div class="field">
+    <%= f.label "Willing to Relocate?" %><br>
+    <%= select.tag :relocate, options_for_select([['Yes', true], ['No', false]])%>
+    
+  </div>
   <div class="field">
   <%= f.label "Skills" %><br />
 
@@ -47,10 +52,7 @@
       
    
 </div>
-  <div class="field">
-    <%= f.label "Willing to Relocate?" %><br>
-    <%= f.check_box :relocate %>
-  </div>
+
   <div class="field">
     <%= f.label :picture %><br>
     <%= f.file_field :picture %>

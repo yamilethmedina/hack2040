@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  resources :employers, except: :index
+  resources :employers
+    get "employees/:id/edit", to: "employers#index", as: :employers
   resources :skills
   resources :employees
   get 'home/index'
+  get "employees/:id/edit", to: "employees#edit", as: "edit_employee_profile"
 
   # devise_for :users, controllers: { sessions: 'users/sessions' }
    
@@ -75,6 +77,6 @@ Rails.application.routes.draw do
 
 
   
-  get "employees/:id/edit", to: "employers#index", as: :employers
+  
 
 end
