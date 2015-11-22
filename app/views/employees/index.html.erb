@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<!--if user doesn't have employee profile -->
-<%= link_to 'New Employee Profile', new_employee_path %>
+
 
 
 
 <fieldset class="search-field">
-  <legend>Search Our Database</legend>
+  <legend>Search Our Database for Talented Black and Latino Candidates</legend>
 
 <%= search_form_for @search do |f| %>
   
@@ -19,7 +18,7 @@
 <% end %>
 </fieldset>
 
-<strong>All Candidates</strong><br>
+<h3>All Candidates</h3>
 <p><% @employee_results.each do |b| %>
 <strong><%= b.firstname %> <%= b.lastname %></strong><br>
 
