@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :employers, except: :index
+  resources :employers
   resources :skills
   resources :employees
   get 'home/index'
@@ -74,6 +74,6 @@ Rails.application.routes.draw do
   #root to: "application#home"
 
   
-  get "employees/:id/edit", to: "employers#index", as: :employers
+
 
 end
