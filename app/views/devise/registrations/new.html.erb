@@ -21,14 +21,16 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
   
+  
+    <div class="field">
+    <%= f.radio_button :accounttype, 'employee' %> 
+  <%= f.label :accounttype, 'I am looking for a job', :value => 'employee' %>
+  <%= f.radio_button :accounttype, 'employer' %>
+  <%= f.label :accounttype, 'I am a potential employer', :value => 'employer' %>
+</div>
  
    
-   <div><%= label :accounttype, "I am looking for a job" %>
-      <%= f.radio_button :accounttype, false , :checked => true , :value => false %></div>
-
-  <br>
-  <div><%= label :accounttype, "I am a potential employer"%>
-       <%= f.radio_button :accounttype, true, :value => true%></div>
+  
   
 
   <div class="actions">
