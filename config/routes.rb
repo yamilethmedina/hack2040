@@ -4,7 +4,14 @@ Rails.application.routes.draw do
   resources :employees
   get 'home/index'
 
-  devise_for :users
+  # devise_for :users, controllers: { sessions: 'users/sessions' }
+   
+       Rails.application.routes.draw do
+      devise_for :users, controllers: {
+        sessions: 'users/sessions'
+      }
+    end
+    
   devise_for :views
   
   # The priority is based upon order of creation: first created -> highest priority.

@@ -26,6 +26,16 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
+  
+<div><%= label :accounttype, "I am looking for a job" %>
+      <%= f.radio_button :accounttype, false , :checked => true , :value => false %></div>
+
+  <br>
+  <div><%= label :accounttype, "I am a potential employer"%>
+       <%= f.radio_button :accounttype, true, :value => true%></div>
+  
+  
+
 
   <div class="actions">
     <%= f.submit "Update" %>
