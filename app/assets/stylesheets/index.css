@@ -4,58 +4,96 @@ html, body{
   padding: 0;
 }
 
-
 .container{
     
+    background-color: black;
     width: 100%;
-}
-
-
-body div p{
-    
-    text-align: right;
     
 }
 
-
-.col-sm-2{
-    
-    height:200px;
-    width: 150px;
-    display: inline-grid;
-    background-color:black;
-    padding-right: 0px;
-    padding-left: 0px;
-    
-   
- 
+img{
+    width: 100%;
+    height: auto;
 }
 
-.col-sm-4{
-    
-    width: 400px;
-    padding-right: 0px;
-    padding-left: 0px;
-    
-    display: inline-grid;
-    
-    
-}
 
-.row-md-3{
-      
- display: inline-block;
- 
+text div p{
+    
+    text-align: left;
     
 }
 
 
+#login{
+    
+    background-color: black;
+    color: white;
+    overflow: hidden; 
+    
+    
+}
+
+#title{
+    
+    font-family: fantasy;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    
+}
+
+#subtitle{
+    font-family: fantasy;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    
+    
+}
+
+ #signup{
+    
+    display: block;
+    margin: 0 auto !important;
+    float:none;
+    width: 50%;
+    margin-top: 75px !important; 
+    
+    
+    
+}
+
+.btn{
+    
+    float: right;
+    margin-bottom: 5px;
+    padding-left: -100px;
+    padding-right: -100px;
+    
+}
+
+
+div{
+    
+    padding: 0 !important;
+    margin: 0 !important;
+    
+}
+
+
+nav ul a{
+    
+    font-size: 15px;
+}
 
 nav{
     
     height: 30px;
     line-height: 30px;
-    position: absolute;
     background-color: teal;
     vertical-align: center;
     
@@ -69,6 +107,54 @@ nav nav-wrapper {
 
 nav-wrapper li a{
     
-    color:aliceblue;
+    color:white;
+    
+}
+
+.text{
+    
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+#first p{
+    
+    font-size: 42px;
+}
+
+#first{
+    
+    text-align: center;
+    font-size: 22px;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+
+#second{
+    
+    text-align: justify; 
+    vertical-align: middle;
+    
+    
+    
+    
+}
+
+#third{
+    
+    text-align: justify;
+    vertical-align: middle;
+
+    
+}
+
+.col s12 m8{
+    
+   position: relative;
+
     
 }
