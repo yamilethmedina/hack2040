@@ -1,4 +1,12 @@
-<h2>Sign up</h2>
+<DOCTYPE! html>
+<html>
+    <head>
+        <title><h1>Sign Up</h1></title>
+    </head>
+    
+<body>  
+    
+    
 
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |form| %>
@@ -21,6 +29,7 @@
     <%= form.label :password_confirmation %><br />
     <%= form.password_field :password_confirmation, autocomplete: "off" %>
   </div>
+
   
   <div class="field">
     
@@ -36,9 +45,13 @@
   
   
 
+
   <div class="actions">
     <%= form.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+    </body>    
+</html>
