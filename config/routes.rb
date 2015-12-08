@@ -1,14 +1,22 @@
 Rails.application.routes.draw do
-  resources :employers
-  resources :skills
-  resources :employees
-  resources :home
-  get 'home/index'
+  # get 'static_pages/home'
+  
+  root "static_pages#home"
+  
+  
+
+  # resources :employers
+  # resources :skills
+  # resources :employees
+  # resources :home
+  # get 'home/index'
 
   # devise_for :users, controllers: { sessions: 'users/sessions' }
    
        Rails.application.routes.draw do
-         get 'home/index'
+        # get 'static_pages/home'
+
+         # get 'home/index'
       devise_for :users, controllers: {
         sessions: 'users/sessions' }
       
@@ -75,7 +83,7 @@ Rails.application.routes.draw do
   #   end
   
   # match '/some_route', to: 'application#home', as: :some_route
-  root "home#index"
+  
   # redirect_to root_path
   #root to: "application#home"
   
