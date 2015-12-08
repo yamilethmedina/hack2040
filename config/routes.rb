@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   
   
 
-  # resources :employers
-  # resources :skills
-  # resources :employees
-  # resources :home
-  # get 'home/index'
+  resources :employers
+  resources :skills
+  resources :employees
+  resources :home
+  get 'home/index'
 
   # devise_for :users, controllers: { sessions: 'users/sessions' }
    
